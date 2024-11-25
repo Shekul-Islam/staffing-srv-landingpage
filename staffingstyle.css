@@ -123,6 +123,11 @@ body {
   font-size: 26px;
 }
 
+.grid-item:hover {
+  background-color: #aa6c40;
+  color: white;
+}
+
 
 /* Benefits Section */
 
@@ -179,6 +184,53 @@ body {
 
 }
 
+.benefit-item:hover {
+  background-color: #aa6c40;
+  color: white;
+  fill: white;
+}
+
+
+
+
+.benefit-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease; 
+}
+
+.benefit-item:hover {
+  background-color: #aa6c40; 
+}
+
+.benefit-item .card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  transition: filter 0.3s ease; 
+}
+
+.benefit-item:hover .card-icon {
+  filter: brightness(0) invert(1); 
+}
+
+.benefit-item span, 
+.benefit-item p {
+  color: #ddd; 
+  transition: color 0.3s ease; 
+}
+
+.benefit-item:hover span, 
+.benefit-item:hover p {
+  color: white; 
+}
+
 /* Meeting Section */
 
 .meeting-image{
@@ -189,7 +241,7 @@ body {
 .staff-meeting{
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 120px;
   background-color: #f5f5f5;
   padding: 20px 20px;
 }
@@ -198,7 +250,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -208,6 +260,17 @@ body {
 
 .meeting-tilte {
   font-size: 40px ;
+}
+
+.btn-meeting{
+  color: white; 
+  background-color: #aa6c40;
+  font-size: 24px; 
+  text-decoration: none;  
+  padding: 0px 15px 3px 16px;
+  border: none;
+  border-radius: 5px;
+ 
 }
 
 
@@ -235,37 +298,6 @@ body {
   border-radius: 5px;
 }
 
-/* Footer */
-.footer {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer form {
-  margin-top: 20px;
-}
-
-.footer input {
-  padding: 10px;
-  width: 200px;
-  border: none;
-  border-radius: 5px;
-}
-
-.footer button {
-  padding: 10px 20px;
-  background: #c39e76;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.footer button:hover {
-  background: #a17a53;
-}
 
 /* Media Queries */
 @media (max-width: 768px) {

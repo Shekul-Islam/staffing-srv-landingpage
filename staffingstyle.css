@@ -1,0 +1,279 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Banner-section */
+
+.image-container {
+  position: relative; 
+  width: 100%; 
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.image-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+  padding-bottom: 140px;
+}
+
+.text-overlay h1 {
+  color: #a57b5d; 
+}
+.image-container .text-overlay {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white; 
+}
+
+.image-container .text-overlay h1 {
+  font-size: 48px; 
+  font-weight: bold; 
+  margin-bottom: 1rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-container .text-overlay p {
+  font-size: 24px; 
+  margin-bottom: 1.5rem; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}
+
+.image-container .text-overlay .btn {
+  display: inline-block; 
+  color: white; 
+  border: 2px solid #a57b5d;
+  padding: 0.3rem 2rem; 
+  font-size: 24px; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease; 
+}
+
+.image-container .text-overlay .btn:hover {
+  background-color: #212223; 
+}
+
+
+hr.line{
+  border: 1px solid  #d6915f; 
+  max-width:100%;
+  margin: 31px 0px;
+}
+
+
+/* Services Section */
+.services {
+  
+  background: white;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 5px;
+  font-size: 57px;
+  font-weight: bolder;
+  color: #2d2b2b;
+}
+
+.service-subtitle{
+  font-size: 20px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+}
+
+
+/* Benefits Section */
+
+.benifit-title{
+  text-align: center;
+}
+
+.benifit-title span{
+  font-size: 24px;
+}
+
+.benefits {
+  padding: 60px 20px;
+}
+
+.benefits h2 {
+  text-align: center;
+ 
+  font-size: 57px;
+  color: #a57b5d;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.card-icon{
+  width: 80px;
+  height: 80px;
+  fill: #a57b5d;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+
+.benefit-item p {
+  font-size: 16.04px;
+  text-align: center;
+}
+
+.benefit-item span {
+  color:  #aa6c40 ;
+  font-size: 22px;
+
+}
+
+/* Meeting Section */
+
+.meeting-image{
+  width: 400px;
+  height: 300px;
+}
+
+.staff-meeting{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+}
+
+.meeting-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.meeting-subtitle {
+  font-size: 24px ;
+}
+
+.meeting-tilte {
+  font-size: 40px ;
+}
+
+
+
+/* Staff Training Section */
+.staff-training {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.staff-training h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.training-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer form {
+  margin-top: 20px;
+}
+
+.footer input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  background: #c39e76;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background: #a17a53;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .services h2, .benefits h2, .staff-training h2 {
+      font-size: 1.5rem;
+  }
+}
